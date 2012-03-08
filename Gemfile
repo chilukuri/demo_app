@@ -9,16 +9,15 @@ gem 'sqlite3'
 
 # for deployment on Heroku
 gem "heroku"
-#group :development, :test do
-#  gem 'sqlite3'
-#end
+
 group :production do
   gem 'pg'
-  #gem 'thin'
 end
 
 gem 'execjs'
 #gem 'therubyracer'
+#gem 'libv8', '3.3.10.4'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
