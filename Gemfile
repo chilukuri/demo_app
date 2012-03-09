@@ -12,9 +12,12 @@ gem "heroku"
 
 group :production do
   gem 'pg'
+  gem 'therubyracer-heroku', :platform => :ruby
 end
 
 gem 'execjs'
+#gem 'therubyracer-heroku', '0.8.1.pre3'
+
 #gem 'therubyracer'
 #gem 'libv8', '3.3.10.4'
 
@@ -28,18 +31,3 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
